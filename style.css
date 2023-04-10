@@ -1,0 +1,109 @@
+:root {
+    --main-color: white;
+    --padding-right: 3rem;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.left {
+    width: 40%;
+    background-image: url(images/background.jpg);
+    background-size: cover;    
+
+    color: var(--main-color);
+    text-align: center;
+}
+
+.left > p {
+    margin-top: 15rem;
+    font-size: 5rem;
+    background-color: rgba(0,0,0, 0.5);
+    height: 9rem;
+}
+
+.right {
+    width: 60%;
+    background-color: rgba(235, 232, 232, 0.73);
+}
+
+.title {
+    padding: var(--padding-right);
+}
+
+.form {
+    background-color: var(--main-color);
+    padding: var(--padding-right);
+
+    box-shadow: 10px 8px 10px 10px grey;
+}
+
+fieldset {
+    border: none;
+}
+
+.inputWrapper {
+    display: inline-block;
+}
+
+.inputWrapper label {
+    display: block;
+    color: rgb(80, 79, 79);
+}
+
+.marginTop {
+    margin-top: 1.5rem;
+}
+
+.marginLeft {
+    margin-left: var(--padding-right);
+}
+
+input {
+    width: 20rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+button {
+    background-color: steelblue;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    width: 13rem;
+    height: 3rem;
+    margin-left: 14px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}

@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Inter:wght@500&family=Montserrat:wght@100&family=Poppins:ital,wght@0,300;0,400;1,300&family=Press+Start+2P&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sign up Page</title>
 </head>
+
 <body>
+    <main>
+        <div class="left">
+            <p class="logo">Sign Up</p>
+        </div>
+
+        <div class="right">
+            <section class="title">
+                <h1>This is not a real online service! You know you need something <br>like this in your life to help
+                    you
+                    realize
+                    your deepest dreams.<br>Sign up <em>now</em> to get started
+                </h1>
+                <h2>You <em>know</em> you want to</h2>
+            </section>
+            <section class="form">
+                <form>
+                    <fieldset>
+                        <legend><h2>Let's do this!</h2></legend>
+                        <div class="firstLine">
+                            <div class="inputWrapper">
+                                <label for="name">FIRST NAME</label>
+                                <input type="text" name="user_name" id="name" required>
+                            </div>
+                            <div class="inputWrapper marginLeft">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" name="user_last_name" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="secondLine marginTop">
+                            <div class="inputWrapper">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="user_email" id="email" required>
+                            </div>
+                            <div class="inputWrapper marginLeft">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="user_phone" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="thirdLine marginTop">
+                            <div class="inputWrapper">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div class="inputWrapper marginLeft">
+                                <label for="confirmedPassaword">CONFIRM PASSWORD</label>
+                                <input type="password" name="user_confirmed_password" id="confirmedPassaword" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="createAccount">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © Romulo Milani</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
